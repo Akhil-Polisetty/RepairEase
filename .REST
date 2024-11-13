@@ -1,0 +1,93 @@
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "name":"user1",
+    "email":"user1@gmail.com",
+    "password":"123",
+    "techie":"Yes"
+}
+
+
+###
+POST http://localhost:3000/api/update_profile
+Content-Type: application/json
+
+{
+    "name":"user1",
+    "email":"user1@gmail.com",
+    "domain":"TV"
+}
+
+
+###
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email":"user1@gmail.com",
+    "password":"123"
+}
+
+
+###
+GET http://localhost:3000/api/getusering?email=user1@gmail.com
+Content-Type: application/json
+
+
+###
+POST http://localhost:3000/api/raising
+Content-Type: application/json
+
+{
+    "remail":"user1@gmail.com",
+    "rname":"user1",
+    "rappliance":"Fan",
+    "rmodel":"samsung z flip",
+    "rdesc":"The fan is broken into two halves",
+    "rlocation":"Mortha",
+    "raddress":"Near here"
+
+}
+
+
+###
+GET http://localhost:3000/api/repair?email=user1@gmail.com
+Content-Type: application/json
+
+
+###
+POST http://localhost:3000/api/response
+Content-Type: application/json
+
+{
+    "to":"user1@gmail.com",
+    "from":"tech1@gmail.com",
+    "desc":"The tv can be sticked using gum",
+    "cost":"400"
+}
+
+###
+GET http://localhost:3000/api/get_response?email=user1@gmail.com
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/post_active
+Content-Type: application/json
+
+{
+    "user":"user1@gmail.com",
+    "technician":"tech1@gmail.com",
+    "rsolution":"The tv can be sticked using gum",
+    "rcost":"700",
+    "rlocation":"Tanuku",
+    "rmodel":"samsung z flip",
+    "raddress":"near there",
+    "rappliance":"TV",
+    "rdesc":"The fan is broken into two halves"
+
+}
+
+###
+GET http://localhost:3000/api/get_active_repairs?email=user1@gmail.com
+Content-Type: application/json
